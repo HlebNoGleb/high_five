@@ -77,13 +77,24 @@ a{
 }
 
 .back{
-  background: #cc0000;
+  background: blue;
  /* background: -webkit-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
   background: -o-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
   background: linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);*/
 }
+.front{
+  background-color: green;
+}
+@keyframes op{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
 
-.front:after{
+/*.front:after{
     position: absolute;
     top: 0;
     left: 0;
@@ -97,7 +108,7 @@ a{
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     /*border-radius: 10px;*/
-}
+}*/
 .container:hover .front,
 .container:hover .back{
     -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -105,6 +116,9 @@ a{
     -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.container:hover .front .inner,.line{
+  animation:op .6s;
 }
 
 .back{
