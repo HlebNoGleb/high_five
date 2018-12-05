@@ -77,13 +77,13 @@ a{
 }
 
 .back{
-  background: blue;
+  background: #cc0000;
  /* background: -webkit-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
   background: -o-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
   background: linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);*/
 }
 .front{
-  background-color: green;
+  background-color: #cc0000;
 }
 @keyframes op{
   from{
@@ -117,7 +117,10 @@ a{
     transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-.container:hover .front .inner,.line{
+.container:hover .front  .line{
+  animation:op .6s;
+}
+.container:hover .front .inner{
   animation:op .6s;
 }
 
