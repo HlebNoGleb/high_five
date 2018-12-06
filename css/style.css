@@ -291,7 +291,12 @@ a{
 .menu{
     position: fixed;
     height: 100vh;
-    background-color: #000;
+    background-color: rgba(0,0,0,1);
+    /*filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);*/
     width: 33.3333%;
     z-index: 10;
     transform: translate(-100%,0);
@@ -302,7 +307,7 @@ a{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #000;
+    background-color: rgba(0,0,0,1);
     width: 33.3333%;
     z-index: 10;
     transform: translate(-100%,0);
@@ -323,7 +328,7 @@ a{
     font-size: 30px;
     padding: 20px;
     line-height: 30px;
-    transition: .4s all ;
+    transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 .social{
     width: 50%;
@@ -336,9 +341,13 @@ a{
     transform: translate(-50%,-50%);
 }
 .social_link img{
+  transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
   width: 50px;
 }
 .menu_link:hover{
+  transform: scale(1.2);
+}
+.social_link img:hover{
   transform: scale(1.2);
 }
 @media only screen and (max-width: 500px){
