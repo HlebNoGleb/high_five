@@ -323,7 +323,7 @@ a{
     font-size: 30px;
     padding: 20px;
     line-height: 30px;
-    transition: .4s;
+    transition: .4s all ;
 }
 .social{
     width: 50%;
@@ -340,6 +340,27 @@ a{
 }
 .menu_link:hover{
   transform: scale(1.2);
+}
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .menu_link{
+    font-size: 14px;
+    padding: 5px;
+    line-height: 20px;
+  }
+  .social{
+    flex-direction:column;
+    bottom: -7%;
+  }
+  .social_link img{
+  width: 35px;
+  padding: 5px;
+}
 }
 
 
