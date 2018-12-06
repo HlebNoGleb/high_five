@@ -24,7 +24,7 @@ a{
 /*cards*/
 .line{
 
-	     -webkit-transform: translateY(-50%) translateZ(100px) scale(0.94);
+	  -webkit-transform: translateY(-50%) translateZ(100px) scale(0.94);
     transform: translate(-50%,-50%) translateZ(100px) scale(0.94);
     top: 80%;
     position: absolute;
@@ -42,12 +42,12 @@ a{
 }
 
 .col{
-  width:33.333333%;
-  cursor: pointer;
+    width:33.333333%;
+    cursor: pointer;
 }
 .cols{
-	display: flex;
-	overflow:hidden;
+  	display: flex;
+  	overflow:hidden;
 }
 
 .container{
@@ -78,9 +78,6 @@ a{
 
 .back{
   background: #cc0000;
- /* background: -webkit-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
-  background: -o-linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);
-  background: linear-gradient(45deg,  #9997EB 0%,#9997EB 100%);*/
 }
 .front{
   background-color: #cc0000;
@@ -94,21 +91,6 @@ a{
   }
 }
 
-/*.front:after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    content: '';
-    display: block;
-    opacity: .2;
-    background-color: #000;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    /*border-radius: 10px;*/
-}*/
 .container:hover .front,
 .container:hover .back{
     -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -152,16 +134,16 @@ a{
 
 .container .back{
     -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+          transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .container .front{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .container:hover .back{
@@ -219,7 +201,7 @@ a{
   height: 4px;
   background-color: #222;
   transform: translate(-50%,-50%);
-    border-radius: 20px;
+  border-radius: 20px;
 }
 .menu-btn span::before,
 .menu-btn span::after {
@@ -237,16 +219,15 @@ a{
   background-color: #fff;
 }
 .menu-btn_active span:before {
-   transform: translate(-50%,50%) rotate(225deg);
+  transform: translate(-50%,50%) rotate(225deg);
   width: 36px;
   transform-origin: center center;
   }
 .menu-btn_active span:after {
-    transform: translate(-50%,50%) rotate(-225deg);
+  transform: translate(-50%,50%) rotate(-225deg);
   width: 36px;
   transform-origin: center center;
   }
-
 
 .menu-block {
   display: flex;
@@ -298,53 +279,54 @@ a{
    background: white;
    -webkit-transition: 0.4s;
    transition: 0.4s;
-     border-radius: 50%;
-     z-index: 2;
-     border: none;
+   border-radius: 50%;
+   z-index: 2;
+   border: none;
  }
 .menu-btn_active:before{    
     height: 205px;
-      border-radius: 50%;
-      border: none;
+    border-radius: 50%;
+    border: none;
 }
 .menu{
-  position: fixed;
-  height: 100vh;
-  background-color: #000;
-  width: 33.3333%;
-  z-index: 10;
-  transform: translate(-100%,0);
-  transition: .4s;
+    position: fixed;
+    height: 100vh;
+    background-color: #000;
+    width: 33.3333%;
+    z-index: 10;
+    transform: translate(-100%,0);
+    transition: .4s;
 }
 .menu_active{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #000;
-  width: 33.3333%;
-  z-index: 10;
-  transform: translate(-100%,0);
-  transition: .4s;
-  transform: translate(0%,0);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    width: 33.3333%;
+    z-index: 10;
+    transform: translate(-100%,0);
+    transition: .4s;
+    transform: translate(0%,0);
 }
 .menu_links{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-60%);
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    display: flex;
+    flex-direction: column;
 }
 .menu_link{
-  text-decoration: none;
-  color: red;
-  font-size: 30px;
-  padding: 20px;
-  line-height: 30px;
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 30px;
+    transition: .4s;
 }
 .social{
-        width: 50%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -352,12 +334,15 @@ a{
     bottom: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
-
-
 }
 .social_link img{
   width: 50px;
 }
+.menu_link:hover{
+  transform: scale(1.2);
+}
+
+
   
 
   
