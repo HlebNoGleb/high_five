@@ -123,6 +123,9 @@ a{
 .container:hover .front .inner{
   animation:op .6s;
 }
+.container:not(:hover) .back .inner{
+  animation:op .6s;
+}
 
 .back{
     position: absolute;
