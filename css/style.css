@@ -23,7 +23,6 @@ a{
 }
 /*cards*/
 .line{
-
 	  -webkit-transform: translateY(-50%) translateZ(100px) scale(0.94);
     transform: translate(-50%,-50%) translateZ(100px) scale(0.94);
     top: 80%;
@@ -44,6 +43,7 @@ a{
 .col{
     width:33.333333%;
     cursor: pointer;
+    overflow:hidden;
 }
 .cols{
   	display: flex;
@@ -118,10 +118,7 @@ a{
 
 .inner{
     -webkit-transform: translateY(-50%) translateZ(100px) scale(0.94);
-            transform: translateY(-50%) translateZ(100px) scale(0.94);
-    top: 50%;
-    position: absolute;
-    left: 0;
+            transform: translateY(-50%) translateZ(100px) scale(0.94);    
     width: 100%;
     padding: 2rem;
     -webkit-box-sizing: border-box;
@@ -130,6 +127,35 @@ a{
     -webkit-perspective: inherit;
             perspective: inherit;
     z-index: 2;
+}
+.front .inner{
+  top: 50%;
+    position: absolute;
+    left: 0;
+}
+.back .inner{
+  top: 50%;
+    position: absolute;
+    left: 0;
+}
+.inner img{
+  width: 50%;
+  padding: 5px;
+}
+.imgs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  fill:white;
+  width: 70%;
+  margin: auto;
+  padding: 30px 0;
+}
+.imgs img{
+  width: 50px;
+}
+path{
+  fill:white;
 }
 
 .container .back{
@@ -346,6 +372,65 @@ a{
 .social_link img:hover{
   transform: scale(1.2);
 }
+.link_more{
+    position: absolute;
+    top: 79%;
+    left: -12%;
+    width: 100%;
+}
+.more {
+  text-decoration: none; 
+  position: relative; 
+  opacity: 0;
+  transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}   
+.more_line{
+  transition: .4s;
+  opacity: 0;
+  left: -100%;
+  width: 100%;
+  transform: translate(-50%,-50%) translateZ(100px) scale(0.94);
+}
+.container:hover .more{
+  opacity: 1;
+  transition-delay:1.3s;
+}
+.container:hover .more_line{
+  opacity: 1;
+  left: 0;
+  transition-delay:1.3s;
+}
+.container:hover .line_center{
+  opacity: 1;
+  transition-delay:1.3s;
+  width: 33.3333%;
+}
+.container:hover .line_right{
+/*  right:  0!important;*/
+  transition-delay:1.3s;
+  left: 0;
+  opacity: 1;
+}
+.link_center{
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+.line_center{
+  left: 50%!important;
+  width: 0;
+}
+.link_right{
+  left: 12%;
+}
+.line_right{
+      transition: .4s;
+      opacity: 0;    
+      width: 100%;
+      right: -100%!important;
+      transform: translate(50%,-50%) translateZ(100px) scale(0.94);
+
+}
+
 @media only screen and (max-width: 500px){
   h1{
     font-size: 20px;
