@@ -1,7 +1,9 @@
 $('.menu-btn').on('click', function(e) {
-  e.preventDefault;
+  // e.preventDefault;
   $(this).toggleClass('menu-btn_active');
-  $(".menu").toggleClass("menu_active")
+  $(".menu").toggleClass("menu_active");
+  $(".cols").toggleClass( "open_it");
+  $(".call_block").toggleClass("call_block_active")
 });
 
 

@@ -6,6 +6,7 @@ body{
 	font-family: Montserrat;
 	font-weight: 400;
 	background:#cc0000;
+  overflow-x: hidden;
 }
 h1{
 	transition: 2s ease;
@@ -44,10 +45,18 @@ a{
     width:33.333333%;
     cursor: pointer;
     overflow:hidden;
+    -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;
+
 }
 .cols{
+    -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;    
   	display: flex;
   	overflow:hidden;
+    width: 100%;
+    position: absolute;
+    right: 0;
 }
 
 .container{
@@ -191,6 +200,12 @@ path{
   margin-bottom: 2rem;
   position: relative;
 }
+.open_it{
+  width: 66.6666%!important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /*menu*/
 .section{
   position: fixed;
@@ -321,10 +336,11 @@ path{
     width: 33.3333%;
     z-index: 10;
     transform: translate(-100%,0);
-    transition: .4s;
+    transition: .5s all ease;
 }
 
 .menu_active{
+    will-change: transform;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -382,10 +398,10 @@ path{
   text-decoration: none; 
   position: relative; 
   opacity: 0;
-  transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: 1s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }   
 .more_line{
-  transition: .4s;
+  transition: 1s ;
   opacity: 0;
   left: -100%;
   width: 100%;
@@ -393,21 +409,21 @@ path{
 }
 .container:hover .more{
   opacity: 1;
-  transition-delay:1.3s;
+  transition-delay:.8s;
 }
 .container:hover .more_line{
   opacity: 1;
   left: 0;
-  transition-delay:1.3s;
+  transition-delay:.8s;
 }
 .container:hover .line_center{
   opacity: 1;
-  transition-delay:1.3s;
+  transition-delay:.8s;
   width: 33.3333%;
 }
 .container:hover .line_right{
 /*  right:  0!important;*/
-  transition-delay:1.3s;
+  transition-delay:.8s;
   left: 0;
   opacity: 1;
 }
@@ -423,12 +439,31 @@ path{
   left: 12%;
 }
 .line_right{
-      transition: .4s;
+      transition: 1s;
       opacity: 0;    
       width: 100%;
       right: -100%!important;
       transform: translate(50%,-50%) translateZ(100px) scale(0.94);
 
+}
+.call_block{
+  display: flex;
+  align-items: center;
+  transition: .4s;
+  position: absolute;
+  top: 0;
+  right: -160px;
+  z-index: 100;
+  background-color: #fff;
+  width: 200px;
+  height: 75px;
+  border-radius: 0 0 0 10px;
+}
+.call_block:hover{
+  right: 0;
+}
+.call_block_active{
+  right: 0;
 }
 
 @media only screen and (max-width: 500px){
@@ -452,6 +487,11 @@ path{
   padding: 5px;
 }
 }
+
+
+
+
+
 
 
   
