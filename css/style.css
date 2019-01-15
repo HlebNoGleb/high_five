@@ -2,11 +2,19 @@
 	padding: 0;
 	margin: 0;
 }
+html, body {
+    height: 100%;
+    /*overflow:hidden;*/
+}
 body{
 	font-family: Montserrat;
 	font-weight: 400;
 	background:#cc0000;
   overflow-x: hidden;
+}
+.all,header{
+  display: none;
+  transition: .4s all ease;
 }
 h1{
 	transition: 2s ease;
@@ -26,12 +34,13 @@ a{
   cursor: pointer;
 }
 .hello{
-  position: absolute;
   z-index: 99999;
+  /*position: fixed;*/
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
-  transition: .5s cubic-bezier(1,-0.02, 1, 1)
+  transition: 1s cubic-bezier(0.13, 0.25, 1, 0.36);
+  overflow:hidden!important;
 }
 .hello_main_text{
   position: absolute;
