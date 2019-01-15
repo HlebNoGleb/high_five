@@ -31,7 +31,7 @@ a{
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
-  transition: 2s cubic-bezier(1,-0.02, 1, 1)
+  transition: .5s cubic-bezier(1,-0.02, 1, 1)
 }
 .hello_main_text{
   position: absolute;
