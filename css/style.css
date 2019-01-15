@@ -13,14 +13,52 @@ h1{
 	font-size: 70px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	text-align: center;	
+  width: 100%;
+}
+.cols h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 a{
   cursor: pointer;
+}
+.hello{
+  position: absolute;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+  transition: 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.hello_main_text{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.hello_btn{
+   position: absolute; top: 80%; left: 50%;transform: translate(-50%,-50%);
+   padding: 10px 20px;
+   font-family: Montserrat;
+   font-weight: 700;
+   font-size: 18px;
+   border-radius: 10px;
+   outline: none;
+   text-transform: uppercase;
+   border: 2px solid white;   
+   background-color: #fff;
+   color: black;
+   width:200px;
+   transition: .4s all ease;
+   filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
+}
+.hello_btn:hover{
+   background-color: rgba(0,0,0,0);
+   color: white;
+   filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
 }
 /*cards*/
 .line{
@@ -200,12 +238,6 @@ path{
   margin-bottom: 2rem;
   position: relative;
 }
-.open_it{
-  width: 66.6666%!important;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 /*menu*/
 .section{
   position: fixed;
@@ -333,7 +365,7 @@ path{
     position: fixed;
     height: 100vh;
     background-color: rgba(0,0,0,1); 
-    width: 33.3333%;
+    width: 100%;
     z-index: 10;
     transform: translate(-100%,0);
     transition: .5s all ease;
@@ -348,7 +380,6 @@ path{
     background-color: rgba(0,0,0,1);
     width: 33.3333%;
     z-index: 10;
-    transform: translate(-100%,0);
     transition: .4s;
     transform: translate(0%,0);
 }
@@ -447,8 +478,8 @@ path{
 
 }
 .call_block{
-  display: flex;
-  align-items: center;
+  /*display: flex;*/
+  /*align-items: center;*/
   transition: .4s;
   position: absolute;
   top: 0;
@@ -465,27 +496,58 @@ path{
 .call_block_active{
   right: 0;
 }
+.first{
+  background-image: url(../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-position: center;
+  height: 100vh;
+}
+
+
+
+
 
 @media only screen and (max-width: 500px){
+  .menu_active{
+    will-change: transform;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    z-index: 10;
+    transition: .4s;
+    transform: translate(0%,0);
+}
   h1{
-    font-size: 20px;
+    font-size: 30px;
+
   }
-  p{
-    font-size: 14px;
+  .cols p{
+    font-size: 20px;
   }
   .menu_link{
     font-size: 14px;
     padding: 5px;
     line-height: 20px;
   }
-  .social{
-    flex-direction:column;
-    bottom: -7%;
-  }
   .social_link img{
   width: 35px;
   padding: 5px;
 }
+  .cols{
+    flex-direction: column;
+  }
+  .col{
+    width: 100vw;
+  }
+  .line{
+    top: 81%;
+  }
 }
 
 
