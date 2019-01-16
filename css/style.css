@@ -85,7 +85,7 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   background-size: 400% 400%;
   -webkit-background-clip: text;  /* подробнее про background-clip */ 
   color: transparent;
-  animation: Gradient 5s ease infinite;
+  animation: flash_bg 5s ease infinite;
 }
 .hello_btn{
    position: absolute; top: 70%; left: 50%;transform: translate(-50%,-50%)!important;
@@ -579,7 +579,7 @@ path{
   filter: drop-shadow(0 0 0px rgba(0,0,0,0));
   -webkit-animation: flash_bg ease-out 10s infinite;
     -moz-animation: flash_bg ease-out 10s infinite;
-    animation: flash_bg ease-out 10s infinite;
+    animation: flash_bg ease-out 5s infinite;
     animation-delay: 0s;
 }
 .face{
@@ -614,7 +614,7 @@ path{
   filter: drop-shadow(0 0 0px rgba(0,0,0,0));
   -webkit-animation: flash ease-out 10s infinite;
     -moz-animation: flash ease-out 10s infinite;
-    animation: flash ease-out 10s infinite;
+    animation: flash ease-out 5s infinite;
     animation-delay: 0s;
 }
 @media only screen and (max-width: 500px){
