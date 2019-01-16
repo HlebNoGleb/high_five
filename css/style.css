@@ -592,7 +592,7 @@ path{
 .call_block_active{
   right: 0;
 }
-.first{
+.hello{
   background-image: url(../img/bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
