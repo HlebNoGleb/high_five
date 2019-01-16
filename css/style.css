@@ -406,12 +406,15 @@ path{
     width: 33.3333%;
     z-index: 10;
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     transition: 0.5s all;
     -webkit-transition: .5s all ease;
     -o-transition: .5s all ease;
     transition: .5s all ease;
+=======
+>>>>>>> parent of 82f8dc8... add prefix
 =======
 >>>>>>> parent of 82f8dc8... add prefix
     transition: .4s;
