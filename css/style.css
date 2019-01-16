@@ -7,7 +7,7 @@ html {
     overflow:hidden;
 }
 body{
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: Montserrat;
   font-weight: 400;
   overflow: hidden;
 }
@@ -35,7 +35,7 @@ h1{
   -o-transition: 2s ease;
   transition: 2s ease;
   font-size: 70px;
-  /*font-family: Montserrat;*/
+  font-family: Montserrat;
   font-weight: 400;
   text-align: center; 
   width: 100%;
@@ -56,54 +56,11 @@ a{
   /*position: fixed;*/
   width: 100vw;
   height: 100vh;
-  /*background-image: -webkit-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
+  background-image: -webkit-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
   background-image: -o-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
-  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);*/
+  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
   /*transition: 1s cubic-bezier(0.13, 0.25, 1, 0.36);*/
   overflow:hidden!important;
-  animation: gradient 2s infinite;
-  transition: .4s;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 5s ease infinite;
-  -moz-animation: Gradient 5s ease infinite;
-  animation: Gradient 5s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
 }
 .hello_main_text{
   position: absolute;
@@ -117,7 +74,7 @@ a{
 .hello_btn{
    position: absolute; top: 70%; left: 50%;-webkit-transform: translate(-50%,-50%)!important;-ms-transform: translate(-50%,-50%)!important;transform: translate(-50%,-50%)!important;
    padding: 10px 20px;
-   font-family: 'Gloria Hallelujah', cursive;
+   font-family: Montserrat;
    font-weight: 700;
    font-size: 18px;
    border-radius: 10px;
@@ -747,17 +704,4 @@ path{
   .line{
     top: 81%;
   }
-}
-
-@keyframes gradient{
-    from{
-      background-image: -webkit-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
-  background-image: -o-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
-  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
-    }
-    to{
-      background-image: -webkit-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
-  background-image: -o-linear-gradient( 315deg, #81FFEF 10%, #F067B4 100%);
-  background-image: linear-gradient( 270deg, #81FFEF 10%, #F067B4 100%);
-    }
 }
