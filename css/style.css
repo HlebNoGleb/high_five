@@ -53,7 +53,7 @@ body{
 }
 h1{
 	transition: 2s ease;
-	font-size: 70px;
+	font-size: 50px;
 	font-family: 'font';
 	font-weight: 400;
 	text-align: center;	
@@ -78,54 +78,28 @@ a{
   overflow:hidden!important;
 background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
+  /*-webkit-animation: Gradient 15s ease infinite;*/
+  /*-moz-animation: Gradient 15s ease infinite;*/
+  /*animation: Gradient 15s ease infinite;*/
 }
 
 
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
 
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
 .hello_main_text{
   position: absolute;
-  top: 40%; 
+  top: 50%; 
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
   color: white;
+  font-size: 20px;
+}
+.hello_main_text h1{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;  /* подробнее про background-clip */ 
+  color: transparent;
+  animation: Gradient 15s ease infinite;
 }
 .hello_btn{
    position: absolute; top: 70%; left: 50%;transform: translate(-50%,-50%)!important;
@@ -646,7 +620,41 @@ path{
   }
 }
 
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
 
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
 
 
 
