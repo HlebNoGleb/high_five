@@ -461,15 +461,15 @@ path{
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100vh;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,1); 
     width: 33.3333%;
     z-index: 10;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
-    -webkit-transform: translate(0%,0);
-        -ms-transform: translate(0%,0);
-            transform: translate(0%,0);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
 }
 .menu_links{
     position: absolute;
