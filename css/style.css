@@ -95,11 +95,11 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   font-size: 20px;
 }
 .hello_main_text h1{
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg,  #5f5e63, #b4b5b7, #fff);
   background-size: 400% 400%;
   -webkit-background-clip: text;  /* подробнее про background-clip */ 
   color: transparent;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 5s ease infinite;
 }
 .hello_btn{
    position: absolute; top: 70%; left: 50%;transform: translate(-50%,-50%)!important;
