@@ -17,21 +17,6 @@ body{
 	font-weight: 400;
   overflow: hidden;
 }
-.load{
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 340px;
-  max-width: 100%;
-  height: 267px;
-  background-image: url(../img/loading.gif);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .all, header{
   display: none;
   /*transition: .4s all ease;*/
@@ -93,6 +78,7 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   width: 100%;
   color: white;
   font-size: 20px;
+  z-index: 3;
 }
 .hello_main_text h1{
     background: linear-gradient(-45deg,  #5f5e63, #b4b5b7, #fff);
@@ -566,8 +552,9 @@ path{
 .call_block_active{
   right: 0;
 }
+
 .hello{
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -575,11 +562,61 @@ path{
   -webkit-background-position: center;
   height: 100vh;
 }
-
-
-
-
-
+.blue_hren{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(../img/blue_hren.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,0));
+  -webkit-animation: flash_bg ease-out 10s infinite;
+    -moz-animation: flash_bg ease-out 10s infinite;
+    animation: flash_bg ease-out 10s infinite;
+    animation-delay: 0s;
+}
+.face{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(../img/bg_face.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+.lightning{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(../img/bg_lightning.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,0));
+  -webkit-animation: flash ease-out 10s infinite;
+    -moz-animation: flash ease-out 10s infinite;
+    animation: flash ease-out 10s infinite;
+    animation-delay: 0s;
+}
 @media only screen and (max-width: 500px){
   .menu_active{
     will-change: transform;
@@ -654,6 +691,22 @@ path{
   100% {
     background-position: 0% 50%
   }
+}
+@keyframes flash {
+    0% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 1)); } 
+    2% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0)); }
+    3% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.6)); }
+    4% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.2)); }
+    6% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.9)); } 
+    100% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0)); }
+}
+@keyframes flash_bg {
+    0% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 1)); } 
+    2% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
+    3% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.6)); }
+    4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2)); }
+    6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9)); } 
+    100% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
 }
 
 
