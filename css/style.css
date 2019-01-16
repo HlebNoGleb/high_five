@@ -696,16 +696,16 @@ path{
     0% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 1)); } 
     2% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0)); }
     3% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.6)); }
-    4% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.2)); }
-    6% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.9)); } 
+    4% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.9)); }
+    6% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0.2)); } 
     100% { filter: drop-shadow(0 0 10px rgba(255, 8, 80, 0)); }
 }
 @keyframes flash_bg {
     0% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 1)); } 
     2% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
     3% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.6)); }
-    4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2)); }
-    6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9)); } 
+    4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9)); }
+    6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2)); } 
     100% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
 }
 
