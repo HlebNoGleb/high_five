@@ -102,6 +102,7 @@ background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
    width:200px;
    /*transition: .4s all ease!important;*/
    filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
+   z-index: 3;
 }
 .hello_btn:hover{
    background-color: rgba(0,0,0,0);
