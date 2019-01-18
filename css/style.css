@@ -1,6 +1,4 @@
 /*        yellow      ---     rgb(244,220,49);       */
-/*        grey        ---     rgb(95,94,99);         */
-/*        grey_light  ---     rgb(179,180,182)*/
 @font-face{
 font-family: 'font';
 src: url('../fonts/Quantify.ttf') format('opentype');
@@ -133,9 +131,9 @@ a{
    border-radius: 10px;
    outline: none;
    text-transform: uppercase;
-   border: 2px solid rgb(95,94,99);  
-   background-color: rgb(95,94,99);
-   color: black;
+   border: 2px solid #fff  ;
+   background-color: #fff;
+   color: #1e1e1e;
    width:200px;
    /*transition: .4s all ease!important;*/
    filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
@@ -143,7 +141,7 @@ a{
 }
 .hello_btn:hover{
    background-color: rgba(0,0,0,0);
-   color: rgb(95,94,99);
+   color: #fff;
    filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
 }
 /*cards*/
@@ -161,8 +159,8 @@ a{
     -webkit-perspective: inherit;
     perspective: inherit;
     z-index: 2;
-    background-color: rgb(95,94,99);
-    color: rgb(95,94,99);
+    background-color: #1e1e1e;
+    color: #1e1e1e;
 }
 
 .col{
@@ -171,8 +169,21 @@ a{
     overflow:hidden;
     -webkit-transition: all .3s linear 0s;
   transition: all .3s linear 0s;
-
 }
+/*.col:nth-child(even){
+    background-color: #1e1e1e;
+}
+.col:nth-child(even) .front{
+  background-color: #1e1e1e;
+  color: rgb(244,220,49);
+}
+.col:nth-child(even) .back{
+  background-color: #1e1e1e;
+  color: rgb(244,220,49);
+}
+.col:nth-child(even) .line{
+  background-color: rgb(244,220,49);
+}*/
 .cols{
     -webkit-transition: all .3s linear 0s;
   transition: all .3s linear 0s;    
@@ -208,7 +219,7 @@ a{
     text-align: center;
     height: 100vh;
     /*border-radius: 10px;*/
-    color: rgb(95,94,99);
+    color: #1e1e1e;
     font-size: 1.5rem;
 }
 
@@ -284,7 +295,7 @@ a{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  fill:rgb(95,94,99);
+  fill:#fff;
   width: 70%;
   margin: auto;
   padding: 30px 0;
@@ -293,7 +304,7 @@ a{
   width: 50px;
 }
 path{
-  fill:rgb(95,94,99);
+  fill:#fff;
 }
 
 .container .back{
@@ -351,7 +362,7 @@ path{
   left: 50%; 
   width: 36px;
   height: 4px;
-  background-color: black;
+  background-color: rgb(244,220,49);;
   transform: translate(58%,950%);
   border-radius: 20px;
   z-index: 5;
@@ -363,7 +374,7 @@ path{
   left: 50%; 
   width: 36px;
   height: 4px;
-  background-color: #222;
+  background-color: rgb(244,220,49);;
   transform: translate(-50%,-50%);
   border-radius: 20px;
 }
@@ -380,17 +391,19 @@ path{
   transform: translate(-50%,-275%);
 }
 .menu-btn_active span {
-  background-color: rgb(95,94,99);
+  background-color: rgb(244,220,49);
 }
 .menu-btn_active span:before {
   transform: translate(-50%,50%) rotate(225deg);
   width: 36px;
   transform-origin: center center;
+  background-color: #1e1e1e;
   }
 .menu-btn_active span:after {
   transform: translate(-50%,50%) rotate(-225deg);
   width: 36px;
   transform-origin: center center;
+  background-color: #1e1e1e;
   }
 
 .menu-block {
@@ -399,14 +412,14 @@ path{
   align-items: center;
 }
 .menu-nav {
-  background-color: rgb(95,94,99);
+  background-color: #fff;
   height: 50px;
   
 }
 .menu-nav__link {
   display: inline-block;
   text-decoration: none;
-  color: rgb(95,94,99);
+  color: #1e1e1e;
   margin-right: 20px;
 }
 .menu-nav__link {
@@ -425,7 +438,7 @@ path{
   width: 200px;
   height: 200px;
   position: relative;
-  background: rgb(95,94,99);
+  background: #1e1e1e;
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
@@ -440,7 +453,7 @@ path{
    left: 0;
    width: 205px;
    height: 0;
-   background:rgb(95,94,99);
+   background:rgb(244,220,49);;
    -webkit-transition: 0.4s;
    transition: 0.4s;
    border-radius: 50%;
@@ -455,7 +468,7 @@ path{
 .menu{
     position: fixed;
     height: 100vh;
-    background-color: rgba(0,0,0,1); 
+    background-color: #1e1e1e; 
     width: 100%;
     z-index: 10;
     transform: translate(-100%,0);
@@ -468,7 +481,7 @@ path{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgba(0,0,0,1); 
+    background-color: #1e1e1e; 
     width: 33.3333%;
     z-index: 10;
     -webkit-transition: 0.5s all;
@@ -584,7 +597,7 @@ path{
   top: 0;
   right: -160px;
   z-index: 100;
-  background-color: rgb(95,94,99);
+  background-color: #fff;
   width: 200px;
   height: 75px;
   border-radius: 0 0 0 10px;
