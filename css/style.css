@@ -661,18 +661,6 @@ path{
     animation-delay: 0s;
 }
 @media only screen and (max-width: 500px){
-  .blue_hren{
-    -webkit-background-size: 200%;
-    background-size: 200%;
-  }
-.face{
-    -webkit-background-size: 200%;
-    background-size: 200%;
-  }
-.lightning{
-    -webkit-background-size: 200%;
-    background-size: 200%;
-  }
   .menu_active{
     will-change: transform;
     position: fixed;
@@ -693,9 +681,9 @@ path{
     font-size: 20px;
   }
   .menu_link{
-    font-size: 25px;
+    font-size: 14px;
     padding: 5px;
-    line-height: 40px;
+    line-height: 20px;
   }
   .social_link img{
   width: 35px;
