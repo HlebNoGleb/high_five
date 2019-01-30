@@ -16,7 +16,7 @@ html {
 body{
 	font-family: 'font';
 	font-weight: 400;
-  overflow:scroll;
+  /*overflow:scroll;*/
 }
 .experimental{
   animation: exp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
@@ -716,6 +716,11 @@ path{
     -moz-animation: flash ease-out 10s infinite;
     animation: flash ease-out 5s infinite;
     animation-delay: 0s;
+}
+@media only screen and (max-width: 1279px){
+  .beta{
+    display: none;
+  }
 }
 @media only screen and (max-width: 500px){
   .menu_active{

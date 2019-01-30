@@ -27,29 +27,36 @@ $('.menu-btn').on('click', function(e) {
  	$(this).removeClass('experimental');
  });
  function colsWidth() {
-
-
-
-
-
  	var colCount;
  	var colsW;
   	colCount = $('.cols .col').length;
   	colsW = colCount * 33;
    $('.cols').css('width', ''+colsW+'vw');
-
-
-
-
-   $('.cols').css({'overflow-x':'scroll'});
    $('.cols').css({'flex-wrap':'nowrap'});
    $('.cols').css({'flex-direction':'row'});
    $('body').css({'overflow-x':'scroll'});
+   $('body').css({'overflow-y':'hidden'});
    $('html').css({'overflow':'hidden'});
-   $('html').css({'scroll-direction':'horizontal'});
 
+   jQuery(function($) {
+  $.fn.hScroll = function(amount) {
+    amount = amount || 120;
+    $(this).bind("DOMMouseScroll mousewheel", function(event) {
+      var oEvent = event.originalEvent,
+        direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+        position = $(this).scrollLeft();
+      position += direction > 0 ? -amount : amount;
+      $(this).scrollLeft(position);
+      event.preventDefault();
+    })
+  };
+});
 
-
-
+$(document).ready(function() {
+  $('body').hScroll(60); // You can pass (optionally) scrolling amount
+});
 }
+
+
+
 
