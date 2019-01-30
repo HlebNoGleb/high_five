@@ -11,7 +11,7 @@ font-style: normal;
 }
 html {
     height: 100%;
-    /*overflow:hidden;*/
+    overflow:hidden;
 }
 body{
 	font-family: 'font';
@@ -47,6 +47,7 @@ body{
   }
 }
 .beta{
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -80,7 +81,7 @@ background-color: #1e1e1e;
   visibility: hidden;
 }
 .all, header{
-  /*display: none;*/
+  display: none;
   /*transition: .4s all ease;*/
 }
 .load{
@@ -813,7 +814,6 @@ path{
     6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2)); } 
     100% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
 }
-
 
 
 
