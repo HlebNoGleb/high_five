@@ -11,12 +11,56 @@ font-style: normal;
 }
 html {
     height: 100%;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 body{
 	font-family: 'font';
 	font-weight: 400;
-  overflow: hidden;
+  overflow:scroll;
+}
+.experimental{
+  animation: exp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
+}
+.experimental:after{
+    content: 'new';
+    position: absolute;
+    top: 45%;
+    left: 73%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    color: red;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 15px;
+    /* width: 100%; */
+    text-align: center;
+}
+@keyframes exp{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.beta{
+  position: fixed;
+  top: 0;
+  right: 0;
+-webkit-clip-path: polygon(0 0, 40% 0, 100% 60%, 100% 100%);
+clip-path: polygon(0 0, 40% 0, 100% 60%, 100% 100%);
+background-color: red;
+width: 100px;
+height: 100px;
+z-index: 100;
+background-color: #1e1e1e;
+}
+.beta p{
+  transform: translate(29%,300%) rotate(46deg);
+  color: rgb(244,220,49);
 }
 .preloader{
   position: fixed;
@@ -36,7 +80,7 @@ body{
   visibility: hidden;
 }
 .all, header{
-  display: none;
+  /*display: none;*/
   /*transition: .4s all ease;*/
 }
 .load{
@@ -190,8 +234,8 @@ a{
   	display: flex;
   	overflow:hidden;
     width: 100%;
-    position: absolute;
-    right: 0;
+    /*position: absolute;*/
+    /*right: 0;*/
     /*background:#cc0000;*/
     background-color: rgb(244,220,49);
     flex-wrap: wrap;
