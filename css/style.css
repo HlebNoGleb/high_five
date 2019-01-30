@@ -24,8 +24,8 @@ body{
 .experimental:after{
     content: 'new';
     position: absolute;
-    top: 45%;
-    left: 73%;
+        top: 35%;
+    left: 80%;
     transform: translate(-50%,-50%) rotate(45deg);
     color: red;
     width: 100px;

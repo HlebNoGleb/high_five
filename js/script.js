@@ -52,7 +52,11 @@ $('.menu-btn').on('click', function(e) {
     })
   };
 });
-
+Swal.fire({
+  type: 'success',
+  title: 'Nice ',
+  text: 'Now u have horizontal scroll'
+})
 $(document).ready(function(colsW) {
 	console.log(colsW);
   $('body').hScroll(100); // You can pass (optionally) scrolling amount
