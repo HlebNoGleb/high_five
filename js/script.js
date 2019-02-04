@@ -52,6 +52,7 @@ $('.menu-btn').on('click', function(e) {
     })
   };
 });
+   
 Swal.fire({
   type: 'success',
   title: 'Nice ',
@@ -62,6 +63,11 @@ $(document).ready(function(colsW) {
   $('body').hScroll(100); // You can pass (optionally) scrolling amount
 });
 }
+function nightMode() {
+     $('.front, .back, body, .cols').css({'background-color':'#1e1e1e'});
+     $('.front, .back').css({'color':'rgb(244,220,49)'});
+     $('.line').css({'background-color':'rgb(244,220,49)'})
+   };
 
 
 
