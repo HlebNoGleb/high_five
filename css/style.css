@@ -19,7 +19,7 @@ body{
     /*overflow:scroll;*/
 }
 .beta{
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -52,8 +52,8 @@ body{
   visibility: hidden;
 }
 .all, header{
-  /*display: none;*/
-  /*transition: .4s all ease;*/
+  display: none;
+  transition: .4s all ease;
 }
 .load{
   display: none;
