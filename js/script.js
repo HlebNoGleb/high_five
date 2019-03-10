@@ -89,7 +89,7 @@ function toggle(button){
       dayMode();
  }
 }
-$("#night_day_mode_toggle").parent().css({"padding":"0px 20px"});
+// $("#night_day_mode_toggle").parent().css({"padding":"0px 20px"});
 
 
 var lFollowX = 0,

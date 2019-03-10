@@ -11,7 +11,7 @@
 }
 html{
     height: 100%;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 body{
   	font-family: 'font';
@@ -521,7 +521,7 @@ path{
     /*color: red;*/
     color: rgb(244,220,49);
     font-size: 30px;
-    padding: 20px;
+    padding: 20px 0;
     line-height: 30px;
     transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
     width: 100%;
@@ -532,7 +532,7 @@ path{
     /*color: red;*/
     color: rgb(244,220,49);
     font-size: 30px;
-    padding: 20px;
+    /*padding: 20px 0;*/
     line-height: 30px;
     transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
     width: 100%;
@@ -543,6 +543,9 @@ path{
     margin: auto;
     outline: none;
     cursor: pointer;
+}
+.mode_toggle{
+  /*padding: 0 20px;*/
 }
 .social{
     width: 50%;
@@ -722,12 +725,15 @@ path{
   }
 }
 @media only screen and (max-width: 500px){
+  .mobile{
+    display: none;
+  }
   .menu_active{
     will-change: transform;
     position: fixed;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 101vh;
     background-color: rgba(0,0,0,1);
     width: 100%;
     z-index: 10;
@@ -741,10 +747,13 @@ h1{
   .cols p{
     font-size: 20px;
   }
-  .menu_link{
+  .menu_link, #night_day_mode_toggle{
       font-size: 14px;
       padding: 5px;
       line-height: 20px;
+  }
+  .mode_toggle{
+    padding: 0 5px;
   }
   .social_link img{
       width: 35px;
