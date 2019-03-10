@@ -1,12 +1,12 @@
-document.body.onload = function(){
-	setTimeout(function(){
-		var preloader = document.getElementById('page-preloader');
-		if(!preloader.classList.contains('done')){
-			preloader.classList.add('done');
-		}
-		AOS.init();
-	}, 2000);
-}
+// document.body.onload = function(){
+// 	setTimeout(function(){
+// 		var preloader = document.getElementById('page-preloader');
+// 		if(!preloader.classList.contains('done')){
+// 			preloader.classList.add('done');
+// 		}
+// 		AOS.init();
+// 	}, 2000);
+// }
 $('.menu-btn').on('click', function(e) {
 	$(this).toggleClass('menu-btn_active');
 	$(".menu").toggleClass("menu_active");
@@ -52,7 +52,8 @@ $('.menu-btn').on('click', function(e) {
     })
   };
 });
-   
+ $(".menu-btn").toggleClass('menu-btn_active');
+  $(".menu").toggleClass("menu_active");  
 Swal.fire({
   type: 'success',
   title: 'Nice ',
@@ -66,8 +67,29 @@ $(document).ready(function(colsW) {
 function nightMode() {
      $('.front, .back, body, .cols').css({'background-color':'#1e1e1e'});
      $('.front, .back').css({'color':'rgb(244,220,49)'});
-     $('.line').css({'background-color':'rgb(244,220,49)'})
-   };
+     $('.line').css({'background-color':'rgb(244,220,49)'});
+     // console.log("keke");
+};
+function dayMode() {
+        $('.front, .back, body, .cols').css({'background-color':'rgb(244,220,49)'});
+        $('.front, .back').css({'color':'#1e1e1e'});
+        $('.line').css({'background-color':'#1e1e1e'});        
+}
+function toggle(button){
+ if ($('#night_day_mode_toggle').hasClass('dayMode')) {
+      $('#night_day_mode_toggle').removeClass('dayMode');
+      $('#night_day_mode_toggle').addClass('nightMode');
+      $('#night_day_mode_toggle').val("Night mode OFF");
+      nightMode();
+ }
+ else if ($('#night_day_mode_toggle').hasClass('nightMode')) {
+      $('#night_day_mode_toggle').removeClass('nightMode');
+      $('#night_day_mode_toggle').addClass('dayMode');
+      $('#night_day_mode_toggle').val("Night mode ON");
+      dayMode();
+ }
+}
+$("#night_day_mode_toggle").parent().css({"padding":"0px 20px"});
 
 
 var lFollowX = 0,
@@ -80,7 +102,7 @@ function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;
   
-  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.3)';
+  translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.3) ';
 
   $('.hello_bg').css({
     '-webit-transform': translate,

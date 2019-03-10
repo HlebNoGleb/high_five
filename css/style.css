@@ -18,37 +18,8 @@ body{
   	font-weight: 400;
     /*overflow:scroll;*/
 }
-.experimental{
-    animation: exp 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
-}
-.experimental:after{
-    content: 'new';
-    position: absolute;
-    top: 35%;
-    left: 80%;
-    transform: translate(-50%,-50%) rotate(45deg);
-    color: red;
-    width: 100px;
-    height: 30px;
-    font-size: 14px;
-    line-height: 15px;
-    /* width: 100%; */
-    text-align: center;
-}
-
-@keyframes exp{
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.1);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
 .beta{
-  display: none;
+  /*display: none;*/
   position: fixed;
   top: 0;
   right: 0;
@@ -81,7 +52,7 @@ body{
   visibility: hidden;
 }
 .all, header{
-  display: none;
+  /*display: none;*/
   /*transition: .4s all ease;*/
 }
 .load{
@@ -556,6 +527,23 @@ path{
     width: 100%;
     text-align: center;
 }
+#night_day_mode_toggle{
+    text-decoration: none;
+    /*color: red;*/
+    color: rgb(244,220,49);
+    font-size: 30px;
+    padding: 20px;
+    line-height: 30px;
+    transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color:rgba(0,0,0,0);
+    font-family: font;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+}
 .social{
     width: 50%;
     display: flex;
@@ -671,6 +659,7 @@ path{
     background-position: center;
     -webkit-background-position: center;
     height: 100vh;
+    filter: drop-shadow(0 0 10px #000);
 }
 .blue_hren{
     position: absolute;
@@ -816,15 +805,10 @@ h1{
     100% { filter: drop-shadow(0 0 10px rgba(254, 243, 50, 0)); }
 }
 @keyframes flash_bg {
-    0% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 1)); 
-      font-size: 60px;} 
-    2% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); 
-      font-size: 55px;}
-    3% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.6)); 
-      font-size: 57px;}
-    4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9)); 
-      font-size: 55px;}
-    6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2)); 
-      font-size: 50px;} 
+    0% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 1));} 
+    2% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0));}
+    3% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.6));}
+    4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9));}
+    6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2));} 
     100% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
 }
