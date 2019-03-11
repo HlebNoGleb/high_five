@@ -18,6 +18,11 @@ body{
   	font-weight: 400;
     /*overflow:scroll;*/
 }
+.logo{
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
 .beta{
   display: none;
   position: fixed;
@@ -512,7 +517,7 @@ path{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-60%);
+    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
 }
@@ -548,14 +553,10 @@ path{
   /*padding: 0 20px;*/
 }
 .social{
-    width: 50%;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .social_link img{
     transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -719,9 +720,22 @@ path{
       animation: flash ease-out 5s infinite;
       animation-delay: 0s;
 }
+.horizontal{
+  height: 100vh!important;
+}
 @media only screen and (max-width: 1279px){
   .beta{
     display: none;
+  }
+  .col{
+    width: 50%;
+    height: 50vh;
+  }
+  .front, .back {
+    height: 50vh;
+  }
+  .menu_active {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 500px){
@@ -748,9 +762,9 @@ h1{
     font-size: 20px;
   }
   .menu_link, #night_day_mode_toggle{
-      font-size: 14px;
-      padding: 5px;
-      line-height: 20px;
+    font-size: 20px;
+    padding: 15px 5px;
+    line-height: 20px;
   }
   .mode_toggle{
     padding: 0 5px;
@@ -764,6 +778,10 @@ h1{
   }
   .col{
       width: 100vw;
+      height: 100vh;
+  }
+  .front, .back {
+    height: 100vh;
   }
   .line{
       top: 81%;
