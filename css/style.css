@@ -131,17 +131,40 @@ a{
   top: 50%; 
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 100%;
+  width: 90%;
   color: rgb(95,94,99);
   font-size: 20px;
   z-index: 3;
+  padding: 0 10px;
 }
 .hello_main_text h1{
     background: linear-gradient(-45deg,  #5f5e63, #b4b5b7, #fff);
   background-size: 400% 400%;
-  -webkit-background-clip: text;  /* подробнее про background-clip */ 
-  color: transparent;
-  animation: flash_bg 5s ease infinite;
+  -webkit-background-clip: text;  /* подробнее про background-clip  
+  /*color: transparent;*/
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Bungee Shade', italic;
+  line-height: 60px;
+  /*filter: drop-shadow(0 0 10px red);*/
+}
+
+.hello_main_text:hover h1{
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px rgba(30, 30, 30, .3), 0 0 20px rgba(30, 30, 30, .3), 0 0 30px rgba(30, 30, 30, .3), 0 0 40px rgb(244,220,49), 0 0 70px rgb(244,220,49), 0 0 80px rgb(244,220,49), 0 0 100px rgb(244,220,49), 0 0 150px rgb(244,220,49);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(30, 30, 30, .3), 0 0 10px rgba(30, 30, 30, .3), 0 0 15px rgba(30, 30, 30, .3), 0 0 20px rgb(244,220,49), 0 0 35px rgb(244,220,49), 0 0 40px rgb(244,220,49), 0 0 50px rgb(244,220,49), 0 0 75px rgb(244,220,49);
+  }
 }
 .hello_btn{
    position: absolute; top: 70%; left: 50%;transform: translate(-50%,-50%)!important;
@@ -737,6 +760,10 @@ path{
   .menu_active {
     width: 50%;
   }
+  .blue_hren, .lightning, .face{
+    -webkit-background-size: 300%;
+    background-size: 300%;
+  }
 }
 @media only screen and (max-width: 500px){
   .mobile{
@@ -838,4 +865,13 @@ h1{
     4% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.9));}
     6% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.2));} 
     100% { filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0)); }
+}
+@keyframes flash_text{
+  
+ from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px rgb(244,220,49), 0 0 70px rgb(244,220,49), 0 0 80px rgb(244,220,49), 0 0 100px rgb(244,220,49), 0 0 150px rgb(244,220,49);
+  }
+  to {
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px rgb(244,220,49), 0 0 35px rgb(244,220,49), 0 0 40px rgb(244,220,49), 0 0 50px rgb(244,220,49), 0 0 75px rgb(244,220,49);
+  }
 }
