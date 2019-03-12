@@ -150,7 +150,7 @@ a{
   animation: neon2 1.5s ease-in-out infinite alternate;
   font-size: 2em;
   color: #fff;
-  font-family: 'font1';
+  font-family: 'font2';
   line-height: 60px;
   /*filter: drop-shadow(0 0 10px red);*/
 }
@@ -872,7 +872,7 @@ h1{
   }
 }
 @font-face{
-font-family: 'font';
+font-family: 'font2';
 src: url('../fonts/13888.otf') format('opentype');
 /*font-weight: 300;*/
 font-style: normal;
