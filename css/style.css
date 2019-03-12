@@ -22,6 +22,9 @@ body{
     width: 30%;
     margin: 0 auto;
     padding: 30px 0 0 0;
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
 }
 .beta{
   display: none;
@@ -145,19 +148,12 @@ a{
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #fff;
   font-family: 'font1';
   line-height: 60px;
   /*filter: drop-shadow(0 0 10px red);*/
 }
-
-.hello_main_text:hover h1{
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
-}
-
 @-webkit-keyframes neon2 {
   from {
     text-shadow: 0 0 5px rgba(30, 30, 30, .3), 0 0 10px rgba(30, 30, 30, .3), 0 0 15px rgba(30, 30, 30, .3), 0 0 20px rgb(244,220,49), 0 0 35px rgb(244,220,49), 0 0 40px rgb(244,220,49), 0 0 50px rgb(244,220,49), 0 0 75px rgb(244,220,49);
