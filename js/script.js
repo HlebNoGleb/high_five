@@ -35,9 +35,10 @@ $('.menu-btn').on('click', function(e) {
    $('.cols').css('width', ''+colsW+'vw');
    $('.cols').css({'flex-wrap':'nowrap'});
    $('.cols').css({'flex-direction':'row'});
-   $('body').css({'overflow-x':'scroll'});
+   $('body').css({'overflow-x':'hidden'});
    $('body').css({'overflow-y':'hidden'});
    $('html').css({'overflow':'hidden'});
+   $('.hScroll').fadeOut();
 
    jQuery(function($) {
   $.fn.hScroll = function(amount) {
