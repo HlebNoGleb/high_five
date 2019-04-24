@@ -49,7 +49,7 @@ $('.menu-btn').on('click', function(e) {
         position = $(this).scrollLeft();
       position += direction > 0 ? -amount : amount;
       $(this).scrollLeft(position);
-      event.preventDefault();
+      // event.preventDefault();
     })
   };
 });
